@@ -11,6 +11,9 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- custom css -->
+     <link rel="stylesheet" href="styles/style.css">
   </head>
   <body class="font-raleway">
     <header class="container mx-auto min-h-screen">
@@ -77,7 +80,7 @@
             <p class="mb-5">
                 Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .
             </p>
-            <button class="btn font-extrabold bg-[#1DD100] border-none">Buy Tickets</button>
+            <button onclick="buyTicket()" class="btn font-extrabold bg-[#1DD100] border-none">Buy Tickets</button>
           </div>
         </div>
 
@@ -169,7 +172,7 @@
          <!-- best offer section end -->
 
          <!-- P.H Paribahan section start -->
-          <section class="my-20 poribahan md:my-24 lg:my-28 border-t-2 border-[#1DD100] rounded-t-[88px] pt-28">
+          <section id="ph-paribahan" class="mt-20 poribahan md:mt-24 lg:mt-28 border-t-2 border-[#1DD100] rounded-t-[88px] pt-28">
             <h1 class="text-4xl font-bold text-center mb-6">P.H Paribahan</h1>
             <p class="text-center">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
 
@@ -221,7 +224,99 @@
 
 
           </section>
+
+          <!-- seat booking section start -->
+           <section class="flex flex-col md:flex-row lg:flex-row py-4 px-8">
+            <div>
+              <h3 class="text-2xl font-semibold">Select Your Seat</h3>
+              <hr class="my-4 border-dotted border-t-2 text-[#03071233]">
+              <div class="flex justify-between">
+                <div class="flex items-center gap-2">
+                  <img src="images/seat-gray.png" alt="">
+                  <p class="text-[#03071280]">Available</p>
+                </div>
+                <div class="flex items-center gap-2">
+                  <img src="images/seat-green.png" alt="">
+                  <p class="text-[#1DD100]">Selected</p>
+                </div>
+              
+              </div>
+              <hr class="my-4 border-dotted border-t-2 text-[#03071233]">
+
+              <div class="flex justify-end">
+                <button class="btn"><img src="images/staring.jpg" alt=""></button>
+              </div>
+
+              <!-- seat -->
+               <div class="flex items-center mt-12">
+                <div>
+                <p class="serial">A</p>
+                <p class="serial">B</p>
+                <p class="serial">C</p>
+                <p class="serial">D</p>
+                <p class="serial">E</p>
+                <p class="serial">F</p>
+                <p class="serial">G</p>
+                <p class="serial">H</p>
+                <p class="serial">I</p>
+                <p class="serial">J</p>
+                </div>
+                
+                <div class="grid grid-cols-2 ml-7">
+                <p id="" class="serial-number">A1</p>
+                <p id="" class="serial-number">A2</p>
+                <p id="" class="serial-number">B1</p>
+                <p id="" class="serial-number">B2</p>
+                <p id="" class="serial-number">C1</p>
+                <p id="" class="serial-number">C2</p>
+                <p id="" class="serial-number">D1</p>
+                <p id="" class="serial-number">D2</p>
+                <p id="" class="serial-number">E1</p>
+                <p id="" class="serial-number">E2</p>
+                <p id="" class="serial-number">F1</p>
+                <p id="" class="serial-number">F2</p>
+                <p id="" class="serial-number">G1</p>
+                <p id="" class="serial-number">G2</p>
+                <p id="" class="serial-number">H1</p>
+                <p id="" class="serial-number">H2</p>
+                <p id="" class="serial-number">I1</p>
+                <p id="" class="serial-number">I2</p>
+                <p id="" class="serial-number">J1</p>
+                <p id="" class="serial-number">J2</p>
+                </div>
+
+                <div class="grid grid-cols-2 ml-16">
+                <p id="A3" class="serial-number">A3</p>
+                <p id="A4" class="serial-number">A4</p>
+                <p id="B3" class="serial-number">B3</p>
+                <p id="B4" class="serial-number">B4</p>
+                <p id="C3" class="serial-number">C3</p>
+                <p id="C4" class="serial-number">C4</p>
+                <p id="D3" class="serial-number">D3</p>
+                <p id="D4" class="serial-number">D4</p>
+                <p id="E3" class="serial-number">E3</p>
+                <p id="E4" class="serial-number">E4</p>
+                <p id="F3" class="serial-number">F3</p>
+                <p id="F4" class="serial-number">F4</p>
+                <p id="G3" class="serial-number">G3</p>
+                <p id="G4" class="serial-number">G4</p>
+                <p id="H3" class="serial-number">H3</p>
+                <p id="H4" class="serial-number">H4</p>
+                <p id="I3" class="serial-number">I3</p>
+                <p id="I4" class="serial-number">I4</p>
+                <p id="J3" class="serial-number">J3</p>
+                <p id="J4" class="serial-number">J4</p>
+                </div>
+                
+               </div>
+            </div>
+            <div>
+
+            </div>
+           </section>
      </main>
      <!-- main section end -->
+
+     <script src="scripts/script.js"></script>
   </body>
 </html>

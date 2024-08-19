@@ -80,7 +80,9 @@
             <button class="btn font-extrabold bg-[#1DD100] border-none">Buy Tickets</button>
           </div>
         </div>
-        <div class="hidden md:flex gap-6 absolute">
+
+        <!-- card into the bottom -->
+        <div class="hidden lg:flex gap-6 absolute font-inter">
             <!-- 1st card -->
             <div class="flex items-center gap-2 bg-white py-6 px-8 rounded-3xl border-b-4 border-b-[#1DD100] relative top-80">
                 <div>
@@ -116,5 +118,55 @@
       </div>
       <!-- banner end -->
     </header>
+
+    <!-- main section start -->
+     <main class="container mx-auto">
+        <!-- best offer section start -->
+         <section class="my-20 md:my-24 lg:my-32">
+            <h1 class="text-4xl font-bold mb-8 md:mb-10 lg:mb-12 text-center">Best offers for you</h1>
+
+            <!-- cupon code -->
+            <div class="flex justify-center flex-col md:flex-row gap-6">
+                <!-- 1st coupon code -->
+                <div class="flex bg-[#FFBF0F] rounded-3xl">
+                    <div class="font-inter p-12">
+                        <h3 class="text-4xl font-black">15% OFF</h3>
+                        <h6 class="font-semibold">on your next purchase</h6>
+                        <p class="text-[#03071266]">use by January 2024</p>
+                    </div>
+                    <div>
+                        <img src="images/cupon-devider.png" alt="">
+                    </div>
+                    <div class="p-12">
+                        <h3 class="text-4xl font-bold">NEW15</h3>
+                        <p class="font-medium text-[#03071266]">Coupon Code</p>
+                    </div>
+                </div>
+
+                <!-- 2nd coupon code(couple) -->
+                <div>
+                    <div class="flex bg-[#F78C9C] rounded-3xl">
+                        <div class="font-inter p-12">
+                            <h3 class="text-4xl font-black">20% OFF</h3>
+                            <h6 class="font-semibold">on your next purchase</h6>
+                            <p class="text-[#03071266]">use by January 2024</p>
+                        </div>
+                        <div>
+                            <img src="images/cupon-devider.png" alt="">
+                        </div>
+                        <div class="p-12">
+                            <h3 class="text-4xl font-bold">Couple 20</h3>
+                            <p class="font-medium text-[#03071266]">Coupon Code</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex justify-center mt-14">
+                <button class="btn rounded-xl text-[#1DD100] bg-white border-[#1DD100]">See All Offers</button>
+            </div>
+         </section>
+     </main>
+     <!-- main section end -->
   </body>
 </html>

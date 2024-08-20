@@ -24,7 +24,7 @@
 }
 
 .serial-number:hover{
-    background-color: #1DD100;
+    background-color: blue;
     color: white;
     cursor: pointer;
 }

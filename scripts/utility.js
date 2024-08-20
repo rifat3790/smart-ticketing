@@ -14,6 +14,10 @@ function getElementByIdText(elementId){
     return document.getElementById(elementId);
 }
 
+function getElementByIdValue(elementId){
+    return document.getElementById(elementId).value;
+}
+
 function setElementByIdIntegerValue(elementId, value){
     document.getElementById(elementId).textContent = value;
 }

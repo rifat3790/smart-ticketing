@@ -324,6 +324,7 @@
                   <p class="font-medium">class</p>
                   <p class="font-medium">Price</p>
                 </div>
+                
 
                 <hr class="my-4 border-dotted border-t-2 text-[#03071233]">
 
@@ -332,14 +333,27 @@
 
                 <hr class="my-4">
 
+                <!-- TOTAL PRICE -->
                 <div class="font-inter flex justify-between">
                   <h3 class="font-medium">Total Price</h3>
-                  <h3 class="font-medium">BDT <span>1100</span></h3>
+                  <h3 class="font-medium">BDT <span id="total-price">0</span></h3>
+                </div>
+
+                <!-- discount price -->
+                <div class="font-inter flex justify-between mt-4">
+                  <h3 class="font-medium">Discount Price</h3>
+                  <h3 class="font-medium">BDT <span id="discount-price">0</span></h3>
                 </div>
 
                 <div class="join flex justify-center my-4 w-full">
-                  <input class="input input-bordered join-item w-full" placeholder="Email" />
-                  <button class="btn join-item">Subscribe</button>
+                  <input id="coupon-code" type="text" class="input input-bordered join-item w-full" placeholder="Have any copupon?" />
+                  <button id="coupon" disabled class="btn join-item bg-[#1DD100] text-white" onclick="applyDiscount()">Apply</button>
+                </div>
+
+                <!-- grand total price -->
+                <div class="font-inter flex justify-between mt-4">
+                  <h3 class="font-medium">Grand Total </h3>
+                  <h3 class="font-medium">BDT <span id="grand-total">0</span></h3>
                 </div>
               </div>
 

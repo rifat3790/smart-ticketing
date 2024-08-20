@@ -89,4 +89,6 @@ if(totalPrice >= 2200){
         setElementByIdIntegerValue("grand-total", newTotalPrice);
     }
 }
+
+document.getElementById("coupon-code").value = "";
 }
